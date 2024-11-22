@@ -5,45 +5,23 @@ Until now, the ADC has usually used a sequential method to build up the PopPK mo
 Here, I would like to learn and practice or even summarize the characteristics of these ADC PopPK models.
 Welcome all the others who are interested in discussing this topic.
 
-## 1. Troldelvy
+## 1. Troldelvy (FDA first indication's review documents: https://www.accessdata.fda.gov/drugsatfda_docs/nda/2020/761115Orig1s000TOC.cfm)
 ### 1. Mechanism of Action
-#### Type: Antibody-drug conjugate (ADC)
-#### Target: Trop-2
-Trop-2 (Trophoblast cell-surface antigen-2) is a surface protein that is overexpressed in various cancers, including triple-negative breast cancer (TNBC) and bladder cancer.
-#### Mechanism:
-Trodelvy consists of an anti-Trop-2 monoclonal antibody linked to SN-38, the active metabolite of irinotecan (a topoisomerase I inhibitor).
-The antibody binds to Trop-2 overexpressed on cancer cells.
-Once internalized, SN-38 is released inside the cells, causing DNA damage and leading to cell death.
-### 2. Indications
-#### Trodelvy is approved for the treatment of the following cancers (specific indications may vary by country):
-##### Metastatic Triple-Negative Breast Cancer (mTNBC):
-For adult patients who have received at least two prior systemic therapies, with at least one therapy for metastatic disease.
-TNBC is an aggressive form of breast cancer with limited treatment options.
-##### Locally Advanced or Metastatic Urothelial Carcinoma (UC):
-For adult patients who have previously received platinum-containing chemotherapy and a PD-1 or PD-L1 inhibitor.
-### 3. Pharmacokinetics (DMPK)
-#### Route of Administration: Intravenous (IV) infusion.
-#### Half-Life:
-The sacituzumab component has a half-life of approximately 15-16 hours.
-The SN-38 payload has a slightly longer half-life.
-#### Metabolism:
-Primarily metabolized in the liver.
-The metabolism of SN-38 is similar to irinotecan, including glucuronidation.
-### 4. Clinical Trials
-#### IMMU-132-01:
-A pivotal trial in TNBC patients demonstrated favorable objective response rates (ORR) and significant survival benefits.
-#### ASCENT Trial:
-Confirmed the efficacy of Trodelvy in metastatic TNBC, showing significantly improved progression-free survival (PFS) and overall survival (OS) compared to traditional chemotherapy.
-### 5. Common Side Effects
-#### Trodelvy may cause the following side effects:
-Hematologic Toxicity: Neutropenia, anemia, thrombocytopenia.
-Gastrointestinal Toxicity: Nausea, vomiting, diarrhea (a common effect of SN-38).
-Alopecia (Hair Loss).
-Fatigue.
-Infections: Increased risk of infections due to immune suppression.
-### 6. Clinical Significance
-Trodelvy represents a breakthrough in precision cancer therapy, combining the specificity of antibody targeting with the cytotoxicity of chemotherapy. It offers an effective treatment option, especially for patients with cancers that are resistant to conventional therapies.
+Sacituzumab govitecan contains a humanized monoclonal antibody hRS7 IgG1 which targets Trop-2. The antibody portion is linked to SN-38, the small molecule portion, via a hydrolysable linker. Sacituzumab govitecan induces DNA damage, leading to apoptosis.
 
-### 7. Regulatory Approvals
-FDA Approval: First approved in 2020 for metastatic triple-negative breast cancer.
-Global Availability: Approved in various countries, including the European Union, Japan, and China.
+### 2. Indications
+Metastatic Triple-Negative Breast Cancer (mTNBC):
+For adult patients who have received at least two prior systemic therapies, with at least one therapy for metastatic disease.
+Locally Advanced or Metastatic Urothelial Carcinoma (UC):
+For adult patients who have previously received platinum-containing chemotherapy and a PD-1 or PD-L1 inhibitor.
+
+### 3. Pharmacokinetics (PK)
+Absorption: sacituzumab govitecan is administered as an intravenous (IV) infusion.
+Distribution: The mean volume of distribution of sacituzumab govitecan is 0.045 L/kg.
+Metabolism: UGT1A1 is involved in the metabolism of SN-38, the small molecule portion of sacituzumab govitecan, to form SN-38 glucuronide (SN-38G).
+Elimination: the mean terminal half-life of sacituzumab govitecan is 16 hours and SN-38 is 18 hours.
+
+### 4. PopPK modeling
+Sathe, A.G., Singh, I., Singh, P. et al. Population Pharmacokinetics of Sacituzumab Govitecan in Patients with Metastatic Triple-Negative Breast Cancer and Other Solid Tumors. Clin Pharmacokinet 63, 669–681 (2024). https://doi.org/10.1007/s40262-024-01366-3
+Scientists from Gilead Sciences, Inc. published this paper:
+"Three population pharmacokinetic models were constructed using non-linear mixed-effects modeling; clinically relevant covariates were evaluated to assess their impact on exposure. Models for SG and tAB were developed independently whereas free SN-38 was sequentially generated via a first-order release process from SG."
